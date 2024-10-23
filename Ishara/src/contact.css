@@ -1,0 +1,46 @@
+.h2contact {
+	color:#080710;
+	font-size:2em;
+	margin-left: 20px;
+}
+
+
+.conmain {
+	display :flex;
+	justify-content:space-evenly;
+	padding:20px;
+
+}
+
+.Email {
+	background-color:gray;
+	border-radius:20px;
+	padding:15px;
+	min-width: 10vw;
+	
+
+}
+
+.Facebook {
+	background-color:gray;
+	border-radius:20px;
+	padding:15px;
+	min-width: 10vw;
+
+}
+
+.Twitter {
+	background-color:gray;
+	border-radius:20px;
+	padding:15px;
+	min-width: 10vw;
+
+}
+
+.Instagram {
+	background-color:gray;
+	border-radius:20px;
+	padding:15px;
+	min-width: 10vw;
+
+}

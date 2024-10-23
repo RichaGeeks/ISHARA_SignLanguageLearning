@@ -1,0 +1,109 @@
+/*.bgtranslate {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}*/
+
+/* Header Styles */
+.headert {
+    background-color: #2165A9;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    width:100vw;
+}
+
+.h1trans {
+    font-size: 2.4em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    padding-top:30px;
+}
+
+/* Main Section Styles */
+.maint {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Input and Button Styles */
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #2575fc;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+    background-color:#2165A9;
+}
+
+input[type="text"]:focus {
+    border-color: #6a11cb;
+    outline: none;
+}
+
+button {
+    background-color: #2165A9;
+    color: #2165A9;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #6a11cb;
+}
+
+/* Sign Images Container */
+.sign-images-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.word-container {
+    display: flex;
+    align-items: flex-end;
+    margin: 10px 0;
+}
+
+.sign-container {
+    text-align: center;
+    margin-right: 10px;
+}
+
+.sign-image {
+    max-width: 100px;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.sign-image:hover {
+    transform: scale(1.1);
+}
+
+.spant {
+    display: block;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.h2trans {
+    color:#2165A9;
+}
+.bluet {
+    background-color:#2165A9;
+    height:50px;
+    
+    width:100vw;
+}

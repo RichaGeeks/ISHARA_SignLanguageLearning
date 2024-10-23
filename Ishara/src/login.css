@@ -8,11 +8,14 @@
 body{
     background-color: #080710;
 }*/
-.loginbg {
-    background-color: #080710;
-    width:100%;
+
+.helllo {
+    
 }
+
 .backgroundlogin{
+    margin-top:80px;
+
 
     width: 430px;
     height: 520px;
@@ -26,6 +29,7 @@ body{
     width: 200px;
     position: absolute;
     border-radius: 50%;
+    background-color:#080710;
 }
 .shape:first-child{
     background: linear-gradient(
@@ -45,6 +49,7 @@ body{
     bottom: -80px;
 }
 form{
+    margin-top:80px;
     height: 520px;
     width: 400px;
     background-color: rgba(255,255,255,0.13);
@@ -60,7 +65,7 @@ form{
 }
 form *{
     font-family: 'Poppins',sans-serif;
-    color: #ffffff;
+    color: #080710;
     letter-spacing: 0.5px;
     outline: none;
     border: none;
@@ -90,13 +95,13 @@ input{
     font-weight: 300;
 }
 ::placeholder{
-    color: #e5e5e5;
+    color: #080710;
 }
 button{
     margin-top: 50px;
     width: 100%;
-    background-color: #ffffff;
-    color: #080710;
+    background-color: #080710;
+    color: #fff;
     padding: 15px 0;
     font-size: 18px;
     font-weight: 600;
@@ -113,7 +118,7 @@ button{
   border-radius: 3px;
   padding: 5px 10px 10px 5px;
   background-color: rgba(255,255,255,0.27);
-  color: #eaf0fb;
+  color:#080710;
   text-align: center;
 }
 .social div:hover{
@@ -124,4 +129,30 @@ button{
 }
 .social i{
   margin-right: 4px;
+}
+
+.btnlogback {
+    background-color:blue;;
+    border-radius:20px;
+    padding:10px;
+    margin-right: 10px;
+}
+.btnbacklogin {
+    background-color: #2165A9;
+    border-radius:20px;
+    padding:5px;
+    
+    max-height:30px;
+    
+
+}
+
+.btnslogin {
+    position:fixed;
+    display:flex;
+    justify-content:right;
+    z-index:24;
+    margin-top:2px;
+    margin-left:2px;
+    max-width:50px;
 }

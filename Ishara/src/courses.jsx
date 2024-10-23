@@ -1,19 +1,23 @@
 import './courses.css'
+import './course1.jsx'
+import { Link } from 'react-router-dom';
 
 function Courses() {
 
   return (
     <>
       <div class="main-content">
-          <div class="moleskine-wrapper">
-            <div class="moleskine-notebook">
-              <div class="notebook-cover purple">
-                <div class="notebook-skin">Basics of ASL</div>
+          <Link to="/course1">
+              <div class="moleskine-wrapper">
+                <div class="moleskine-notebook">
+                  <div class="notebook-cover purple">
+                    <div class="notebook-skin">Basics of ASL</div>
+                  </div>
+                  <div class="notebook-page"></div>
+                </div>
+                <h4>Edition 1</h4>
               </div>
-              <div class="notebook-page"></div>
-            </div>
-            <h4>Edition 1</h4>
-          </div>
+          </Link>
   
           <div class="moleskine-wrapper">
             <div class="moleskine-notebook">
