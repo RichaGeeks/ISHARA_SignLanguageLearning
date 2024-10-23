@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
+
+.bgimg {
+	width:100%;
+	position : relative;
+}
+ul {
+	display:flex;
+	justify-content: space-between;
+	list-style-type: none;
+	padding: 6px;
+	padding-top: 15px;
+	
+}
+
+
+nav {
+	display :flex;
+	justify-content: space-between; 
+	padding-left: 30px;
+	padding-right:30px;
+	position : absolute;
+	top:0%;
+	width: 90vw; 
+	color: #fff
+	
+}
+nav h2 {
+	font-size: 2.5rem ;
+	transition-duration: 2s;
+}
+nav h2:hover {
+	transform: rotateY(180deg);
+}
+
+.navItems {
+	padding-left:10px;
+	padding-right:10px;
+	font-size:1.1rem;
+	font-family:sans-serif;
+	font-weight:semi-bold;
+	cursor:pointer;
+	padding-top:5px;
+}
+.navItemLogin {
+	margin-top:-8px;
+	
+	
+
+}
+.navItemLogin:hover {
+
+}
+.loginbtn{
+	color:black;
+	
+	transition-duration: 3s;
+}
+.loginbtn:hover{
+	background-color:black;
+	color:#fff;
+	border:none;
+
+}
+.navItemTrans {
+	padding-left:10px;
+	padding-right:10px;
+	font-size:1.1rem;
+	font-family:sans-serif;
+	font-weight:semi-bold;
+	border-radius:20px;
+	max-height:30px;
+	border: 2px solid #a35ccc;
+	transition-duration: 1s;
+	padding-top:5px;
+	padding-bottom:5px;
+
+
+}
+.navItemTrans:hover {
+	background-color:white;
+	color:#a35ccc;
+	cursor:pointer;
+	border:none;
+}
+
+.TextMain {
+  color: #fff;
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center; 
+  
+}
+
+
+
+.gtcbtn {
+  margin-top: 10px;
+  background-color:#a35ccc;
+  color: white;
+  transition-duration: 2s;
+}
+.gtcbtn:hover {
+	background-color:#922187;
+	
+}
+
+.toptext {
+	font-size:2.5rem;
+	color:#fff;
+	/*transition: ease;
+	transition-duration: 2s;*/
+}
+.toptext:hover{
+	/*transform: rotateY(180deg);*/
+	/*font-size:2.7rem;*/
+}
+.TextMainSub {
+	font-size:1rem;
+	font-family:sans-serif;
+	color:gray;	
+
+}
+
+.dontcont {
+	display :flex;
+	color:#fff;
+	background-color:#080710;
+	border-radius:40px;
+	margin:40px;
+	padding: 30px
+	
+}
+.textdon {
+	color:#fff;
+
+}
+.textdon h1 {
+	font-size:2.5em;
+}
+.paradon{
+	color:gray;
+
+
+}
+.dnbtn {
+	font-size:1.2em;
+	font-weight: bold;
+	/*border : 2px solid #DEBA4E;*/
+	border-radius : 20px;
+	padding:10px;
+	margin-top:30px;
+	background-color:#A763BC;
+}
+.dnbtn:hover {
+	background-color:#080710;
+	border : 2px solid #A763BC;
+	
+}

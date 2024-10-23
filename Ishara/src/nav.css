@@ -1,0 +1,47 @@
+ul {
+	display:flex;
+	justify-content: space-between;
+	list-style-type: none;
+	padding: 6px;
+	padding-top: 15px;
+	
+}
+
+
+nav {
+	display :flex;
+	justify-content: space-between; 
+	padding-left: 30px;
+	padding-right:30px;
+	position : absolute;
+	top:0%;
+	width: 90vw; 
+	color: #fff;
+	overflow:none;
+}
+nav h2 {
+	font-size: 2.5rem ;
+	transition-duration: 2s;
+}
+nav h2:hover {
+	transform: rotateY(180deg);
+}
+
+.navItems {
+	padding-left:10px;
+	padding-right:10px;
+	font-size:1.1rem;
+	font-family:sans-serif;
+	font-weight:semi-bold;
+	cursor:pointer;
+	padding-top:5px;
+}
+.navItemLogin {
+	margin-top:-48px;
+	
+	
+
+}
+.navItemLogin:hover {
+
+}

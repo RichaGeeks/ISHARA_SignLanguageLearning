@@ -1,0 +1,138 @@
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    padding-top:90px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2165A9;
+    border-radius: 20px;
+    padding: 20px;
+    width: 70%;
+}
+
+.image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#2165A9;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid #ff7d26;
+}
+
+.text-section {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.text-section h2 {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.text-section p {
+    color: #ccc;
+    margin: 10px 0;
+}
+
+.image-credit {
+    font-size: 12px;
+    color: #bbb;
+}
+
+.learn-more-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #5a2aa8;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.learn-more-button:hover {
+    background-color: #462082;
+}
+
+.info-boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 70%;
+}
+
+.info-box {
+    
+    border-radius: 10px;
+    /padding: 20px;/
+    text-align: center;
+    width: 30%;
+    transition-duration: 2s;
+}
+.info-box:hover {
+    transform :rotateY(180deg);
+}
+.info-box1 {
+    background-color:#5a2aa8 ;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+.info-box2 {
+    background-color:#fff ;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+.info-box3 {
+    background-color:#2165A9;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+/*.info-box h3 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 10px;
+}*/
+.numA {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.numB {
+    font-size: 3rem;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.numC {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    color: #777;
+    font-size: 14px;
+}

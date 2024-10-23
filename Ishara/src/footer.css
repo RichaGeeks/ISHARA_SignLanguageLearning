@@ -1,0 +1,47 @@
+.footer-container {
+  background-color: #222;
+  padding: 2em 0;
+  text-align: center;
+  color: #fff;
+  font-family: 'Quicksand', sans-serif;
+  width: 100%;               /* Ensure full width */
+  position: relative;         /* Keep it positioned relative to the content */
+  bottom: 0;                  /* Align it to the bottom */
+  left: 0;                    /* Ensure it spans from left to right */
+}
+
+.social-links {
+  margin-bottom: 1em;
+}
+
+.social-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #fed754; /* Change to your preferred hover color */
+}
+
+.footer-text {
+  font-size: 14px;
+  color: #aaa;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;           /* Ensure footer stays at the bottom of the page */
+  display: flex;
+  flex-direction: column;
+}
+
+.app-container {
+  flex: 1;                    /* Ensure the main content takes up available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
