@@ -1,4 +1,5 @@
 import './donation.css';
+import { Link } from 'react-router-dom';
 
 function Donation() {
   
@@ -8,7 +9,7 @@ function Donation() {
             <div>
                 <h1>Donate Us</h1>
                 <p>Your generous contribution helps us empower the deaf community by improving access to education and communication tools.</p>
-                <div>Donate Now</div>
+                <div><Link to="/donationpage">Donate Now </Link></div>
 
             </div>
             <div>

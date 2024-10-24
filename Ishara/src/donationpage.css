@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+
+/*input, select, button {
+    color: white;
+}*/
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#area * {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#area {
+    background: url('../src/images/deafschool.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 500px;
+}
+
+.bubble {
+    background: #922187; /* Semi-transparent background for bubble effect */
+    border-radius: 30px;
+    padding: 20px;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+
+.master-card {
+    padding: 10px;
+    border-radius: 10px;
+    height: 150px;
+    max-height: 150px;
+    width: 250px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: .5s;
+    transform: rotateY(0deg);
+    margin-bottom: 20px;
+}
+
+.card {
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    backface-visibility: hidden;
+    background: #2165A9;
+    height: 170px;
+    width: 250px;
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+.title {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.9);
+    padding-bottom: 5px;
+    font-weight: bold;
+    color: rgba(11, 0, 0, 0.8);
+}
+
+.input-number .title-number {
+    font-size: 12px;
+    color: rgba(11, 0, 0, 0.8);
+}
+
+.inputs-number {
+    display: flex;
+}
+
+.inputs-number input {
+    background: rgba(255, 255, 255, 0.8);
+    color: rgba(11, 0, 0, 0.8);
+    border: none;
+    height: 15px;
+    width: 45px;
+    border-radius: 2px;
+    padding: 5px 4px;
+    text-align: center;
+    margin: 5px;
+}
+
+
+.selects-date {
+    height: 40px;
+    margin-top: 5px;
+    display: flex;
+    width: 1px;
+    align-items: center;
+}
+
+.spa {
+    color: rgba(11, 0, 0, 0.8);
+}
+
+select {
+    background: rgba(255, 255, 255, 0.8);
+    color: rgba(11, 0, 0, 0.8);
+    border: none;
+    width: 50px;
+    height: 25px;
+    border-radius: 2px;
+    margin: 5px;
+}
+
+.card-back {
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    backface-visibility: hidden;
+    background: #2165A9;
+    height: 150px;
+    width: 250px;
+    transform: rotateY(180deg);
+}
+
+.secret-area {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8); /* Assuming transparentize(white, 0.8) */
+    height: 30px;
+    top: 60px;
+    left: 20px;
+    right: 20px;
+    border-radius: 3px;
+}
+
+.secret-area input {
+    background: transparent;
+    border: none;
+    height: 30px;
+    text-align: right;
+    padding: 0 7px 0 0;
+    width: 220px;
+    color: rgba(11, 0, 0, 0.8);
+}
+
+.secret-area span {
+    float: right;
+    margin: 5px;
+    color: rgba(0, 0, 0, 0.5); /* Assuming transparentize(black, 0.5) */
+}
+
+.button-sent {
+    margin-top: 15px;
+    width: 100%; /* Ensure container spans full width */
+    display: flex; /* Use flexbox to arrange items horizontally */
+    justify-content: space-between; /* Even spacing between buttons */
+    color: white;
+}
+
+.btndondon {
+    border-radius: 3px;
+    border: none;
+    font-size: 13px;
+    padding: 5px 10px;
+    background: #a35ccc;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.8);
+    position: relative;
+    transition: .5s;
+    width: 50px; /* Set a fixed width for each button */
+    text-align: center;
+}
+
+.btndondon :hover {
+    top: -1px;
+    cursor: pointer;
+    box-shadow: 0px 2px 1px 1px rgba(0, 0, 0, 0.8);
+    background: #922187; /* Slightly darker background color on hover */
+    color: #fff !important; /* Keep the text white on hover */
+}
+
+.mark-gold {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border: solid 1px rgba(255, 255, 255, 0.8); /* Using 'rgba' for transparency */
+    padding: 5px;
+    border-radius: 10px;
+    width: 40px;
+    height: 50px;
+}
+
+.round .circles .circle-1 {
+    width: 40px;
+    height: 25px;
+    border-radius: 6px;
+    background: #ccc;
+    position: relative;
+}
+
+.round .circles .circle-1:after {
+    content: '';
+    width: 35px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.8); /* Equivalent of transparentize(white, 0.8) */
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 3px;
+}
+
+.round .circles .circle-1:before {
+    content: '';
+    width: 35px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.8); /* Equivalent of transparentize(white, 0.8) */
+    position: absolute;
+    bottom: 2px;
+    left: 2px;
+    border-radius: 3px;
+}
+
+.round .circles .circle-2 {
+    margin-top: 2px;
+    width: 40px;
+    height: 25px;
+    position: relative;
+}
+
+.round .circles .circle-2:after {
+    content: '';
+    width: 25px;
+    height: 25px;
+    background: #f57576;
+    border-radius: 15px;
+    position: absolute;
+    left: 0;
+}
+
+.round .circles .circle-2:before {
+    content: '';
+    width: 25px;
+    height: 25px;
+    background: #ff9d66;
+    border-radius: 15px;
+    position: absolute;
+    right: 0;
+}
+
+.chip-card {
+    width: 45px;
+    height: 35px;
+    background: #a6bbc2;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    border-top-right-radius: 10px !important;
+    border-radius: 5px;
+}
+
+.chip-card:after {
+    content: '';
+    width: 35px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.8); /* Equivalent of transparentize(white, 0.8) */
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-radius: 3px;
+}
+
+.chip-card:before {
+    content: '';
+    width: 35px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.8); /* Equivalent of transparentize(white, 0.8) */
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    border-radius: 3px;
+}
+
+.tire {
+    position: absolute;
+    width: 100%;
+    background: #5e5e5e;
+    height: 35px;
+    top: 15px;
+    left: 0;
+}
+
+.back-to-home {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #a35ccc;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+    width: 20%
+}
+
+.back-to-home:hover {
+    background-color: #922187;
+}
+
+

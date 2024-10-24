@@ -16,11 +16,8 @@ function Nav({ scrollToContact }) {
         <li className="navItemTrans">
           <Link to="/translate">Translate</Link>
         </li>
-        <li className="navItems">
-         
-          <button className="navItems" onClick={scrollToContact}>
+        <li className="navItems" onClick={scrollToContact}>        
             Contact
-          </button>
         </li>
         <li className="navItemLogin">
           <button className="loginbtn">
