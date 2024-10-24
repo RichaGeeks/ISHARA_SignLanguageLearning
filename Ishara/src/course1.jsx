@@ -1,4 +1,4 @@
-import './course.css';
+/*import './course.css';*/
 import { useEffect } from 'react';
 import wavingvideo from '../src/images/waving.mp4';
 import helloasl from '../src/images/hello_asl.mp4';
