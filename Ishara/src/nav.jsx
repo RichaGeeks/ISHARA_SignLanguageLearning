@@ -17,8 +17,8 @@ function Nav({ scrollToContact }) {
           <Link to="/translate">Translate</Link>
         </li>
         <li className="navItems">
-          {/* Replace the Link for Contact with a button to scroll */}
-          <button className="contact-btn" onClick={scrollToContact}>
+         
+          <button className="navItems" onClick={scrollToContact}>
             Contact
           </button>
         </li>
