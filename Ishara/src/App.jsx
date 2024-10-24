@@ -6,7 +6,6 @@ import Footer from '../src/footer.jsx';
 import Feedback from '../src/feedback.jsx';
 import Nav from '../src/nav.jsx';
 import React, { useRef } from 'react';
-
 import { Route, Routes } from 'react-router-dom';
 import Translate from '../src/translate.jsx';
 import About from '../src/about.jsx';
@@ -18,6 +17,8 @@ import Signup from '../src/signup.jsx';
 function App() {
   // Create a reference for the Courses section
   const coursesRef = useRef(null);
+  // Create a reference for the Contact section
+  const contactRef = useRef(null);
 
   // Function to scroll to the Courses section
   const scrollToCourses = () => {
@@ -26,9 +27,15 @@ function App() {
     }
   };
 
+  // Function to scroll to the Contact section
+  const scrollToContact = () => {
+    if (contactRef.current) {
+      contactRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="app-container">
-      {/* <Nav /> */}
       <Routes>
         <Route
           path="/"
@@ -36,10 +43,12 @@ function App() {
             <>
               <div>
                 <img alt="bg" className="bgimg" src={bg} />
-                <Nav />
+                <Nav scrollToContact={scrollToContact} /> {/* Pass the scrollToContact function as a prop */}
                 <div className="TextMain">
                   <div>
-                    <h1 className="toptext">Bridging Communication,<br /> One Sign at a Time</h1>
+                    <h1 className="toptext">
+                      Bridging Communication,<br /> One Sign at a Time
+                    </h1>
                     <h3 className="TextMainSub">
                       Gateway to mastering ASL, blending fun lessons with visual demos to make learning signs easy and exciting.
                       Unlock the power of hands and start communicating in a whole new way!
@@ -58,30 +67,33 @@ function App() {
                 
                 <div className="don">
                   <div className="dontcont">
-                      <div className="textdon">
-                           <h1>Donate Us</h1>
-                           <p className="paradon">
-                             Your generous contribution enables us to make a significant difference in the lives of the deaf community. By supporting our cause, you help provide vital resources that improve access to quality education and innovative communication tools. These resources empower individuals to overcome communication barriers, enhance their learning opportunities, and build a more inclusive society where everyone has the chance to thrive.
-                           </p>
-                           <div className="dnbtn">Donate Now</div>
-                      </div>
-                      <div>
-                           <img src={donatepng} alt="donation img"></img>
-                      </div>
+                    <div className="textdon">
+                      <h1>Donate Us</h1>
+                      <p className="paradon">
+                        Your generous contribution enables us to make a significant difference in the lives of the deaf community. By supporting our cause, you help provide vital resources that improve access to quality education and innovative communication tools. These resources empower individuals to overcome communication barriers, enhance their learning opportunities, and build a more inclusive society where everyone has the chance to thrive.
+                      </p>
+                      <div className="dnbtn">Donate Now</div>
+                    </div>
+                    <div>
+                      <img src={donatepng} alt="donation img"></img>
+                    </div>
                   </div>
                 </div>
-                <Contact />
+
+                {/* Add the ref to the Contact component */}
+                <div ref={contactRef}>
+                  <Contact />
+                </div>
                 <Footer />
               </div>
             </>
           }
         />
-        
         <Route path="/translate" element={<Translate />} />
         <Route path="/about" element={<About />} />
         <Route path="/course1" element={<Course1 />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup/>} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
     </div>
   );
